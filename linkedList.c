@@ -33,12 +33,11 @@ struct listNode* insert(struct listNode *list, struct listNode *newNode) {
     return list;
 }
 
-struct listNode* insertAtFront(struct listNode* list) {
+struct listNode* insertAtFront(struct listNode* list, int data) {
     struct listNode* newListNode;
-    int data;
 
-    printf("\nInsert element: ");
-    scanf("%d", &data);
+    /*printf("\nInsert element: ");
+    scanf("%d", &data);*/
 
     newListNode = addNode(data);
 
